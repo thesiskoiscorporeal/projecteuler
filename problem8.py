@@ -7,14 +7,14 @@ for i in range(len(instring)-13):
     
     num = int(instring[i:i+13])
     temp = num
+    product = 1
 
     while(temp != 0):
         # multiply product by last digit of temp
         product = product * (temp % 10)
         # remove last digit from temp
         temp = int(temp / 10)
-
-product_list.append(product)
+    product_list.append(product)
 
 
 print(max(product_list))
