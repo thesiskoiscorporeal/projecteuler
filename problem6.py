@@ -1,0 +1,1 @@
+print(sum([x**2 for x in range(1,101)]) - (sum(range(101)))**2)
